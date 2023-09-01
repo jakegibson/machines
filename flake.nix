@@ -1,5 +1,5 @@
 {
-  description = "linuxmobile Config. Take Care about it";
+  description = "idsix Config. Take Care about it";
 
   outputs = inputs:
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {

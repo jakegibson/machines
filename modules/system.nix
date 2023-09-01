@@ -38,7 +38,7 @@
   # don't ask for password for wheel group
   security.sudo.wheelNeedsPassword = false;
 
-  users.users.linuxmobile = {
+  users.users.idsix = {
     isNormalUser = true;
     shell = pkgs.zsh;
     extraGroups =

@@ -5,18 +5,18 @@
         systemInputs = { _module.args = { inherit self' inputs'; }; };
         inherit (inputs.nixpkgs.lib) nixosSystem;
       in {
-        linudev = nixosSystem {
+        ctrlone = nixosSystem {
           inherit system;
 
           modules = [
-            ./linudev
+            ./ctrlone
             ../modules/desktop.nix
             #../modules/greetd.nix
             ../modules/desktop.nix
             # ../modules/lanzaboote.nix
             {
-              home-manager.users.linuxmobile.imports =
-                homeImports."linuxmobile@linudev";
+              home-manager.users.idsix.imports =
+                homeImports."idsix@ctrlone";
             }
             systemInputs
           ] ++ sharedModules;

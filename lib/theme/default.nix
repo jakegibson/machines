@@ -9,7 +9,7 @@
 
   launcher = "anyrun";
 
-  # linuxmobile font -> AestheticIosevka Nerd Font Mono
+  # idsix font -> AestheticIosevka Nerd Font Mono
   terminal = {
     font = "CartographCF Nerd Font";
     name = "wezterm";
@@ -20,7 +20,7 @@
   # TODO: Change this later
   wallpaper = builtins.fetchurl {
     url =
-      "https://raw.githubusercontent.com/linuxmobile/hyprland-dots/Sakura/.wallpapers/catgirl.jpg";
+      "https://raw.githubusercontent.com/idsix/hyprland-dots/Sakura/.wallpapers/catgirl.jpg";
     sha256 = "sha256-5ON6GQ1yEFF/6ChUVgWAlLO9PnvGEBfGOeyOcWlGMlM=";
   };
 }

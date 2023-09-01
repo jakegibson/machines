@@ -17,7 +17,6 @@ in {
         "hyprctl setcursor ${pointer.name} ${toString pointer.size}"
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
         "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-        "echo latam > /tmp/kb_layout"
         "wlsunset -t 5200 -S 9:00 -s 19:30"
         "waybar"
         "dunst"
@@ -30,7 +29,6 @@ in {
       ];
       xwayland = {force_zero_scaling = true;};
       input = {
-        kb_layout = "latam";
         follow_mouse = 1;
         sensitivity = 0;
         force_no_accel = 1;

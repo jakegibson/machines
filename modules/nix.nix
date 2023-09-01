@@ -4,7 +4,7 @@
     pkgs.git
     inputs'.nh.packages.default
   ];
-  environment.variables.FLAKE = "/home/linuxmobile/Dev/nixland";
+  environment.variables.FLAKE = "/home/idsix/Dev/nixland";
 
   nix = {
     distributedBuilds = true;

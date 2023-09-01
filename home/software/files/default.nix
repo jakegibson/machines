@@ -15,7 +15,7 @@
   # home.file."${config.xdg.dataHome}/fonts/Cartograph-CF-NF".source = lib.cleanSourceWith {
   #   filter = name: _: (lib.hasSuffix ".otf" (baseNameOf (toString name)));
   #   src = pkgs.fetchzip {
-  #     url = "git@github.com:linuxmobile/cartograph/raw/main/Cartograph-CF-NF.zip";
+  #     url = "git@github.com:idsix/cartograph/raw/main/Cartograph-CF-NF.zip";
   #     sha256 = "sha256-PF2n4d9+t1vscpCRWZ0CR3X0XBefzL9BAkLHoqWFZR4=";
   #     stripRoot = false;
   #   };

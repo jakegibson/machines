@@ -4,7 +4,7 @@
   programs.git = {
     enable = true;
     lfs.enable = true;
-    userName = "linuxmobile";
+    userName = "idsix";
     userEmail = "bdiez19@gmail.com";
     signing = {
       key = "0ED36D957F70C814";

@@ -2,7 +2,7 @@
 with lib;
 let
   rosepine-theme = pkgs.fetchFromGitHub {
-    owner = "linuxmobile";
+    owner = "idsix";
     repo = "discord-rosepine";
     rev = "d7d428f67ae1594a55634df6fde7c324d49b0857";
     hash = "sha256-cx2KMH2SCTCmvGOLBooucR6EaryBf3O+4VC/lsAX+cE=";

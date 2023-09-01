@@ -49,7 +49,7 @@
   Minimalist and functional!
 - **Launcher** • [AnyRun](https://github.com/Kirottu/anyrun) 🚀 Fast AnyRunner!
 - **File Manager** • [Ranger](https://github.com/ranger/ranger)🔖 custom!
-- **GUI Basic-IDE** • [NvChad-V2](https://github.com/linuxmobile/nvchad-v2) Rice
+- **GUI Basic-IDE** • [NvChad-V2](https://github.com/idsix/nvchad-v2) Rice
   IDE!
 
 ### 🍂  <samp>CHANGELOGS</samp>
@@ -106,17 +106,17 @@ nix-shell -p nixFlakes git
 - Clone my Dotfiles 
 
 ```bash 
-git clone --depth 1 https://github.com/linuxmobile/kaku /mnt/etc/nixos
+git clone --depth 1 https://github.com/idsix/kaku /mnt/etc/nixos
 ```
 
 - Generate your Own Nix Hardware Settings:
 ### ⚠ <sup><sub><samp>DON'T FORGET IT</samp></sub></sup>
 
 ```bash
-sudo nixos-generate-config --dir --force /mnt/etc/nixos/hosts/linudev
+sudo nixos-generate-config --dir --force /mnt/etc/nixos/hosts/ctrlone
 
 # Remove configuration.nix 
-rm -rf /mnt/etc/nixos/hosts/linudev/configuration.nix
+rm -rf /mnt/etc/nixos/hosts/ctrlone/configuration.nix
 ```
 
 - Install Dotfiles Using Flake
@@ -126,7 +126,7 @@ rm -rf /mnt/etc/nixos/hosts/linudev/configuration.nix
 cd mnt/etc/nixos/
 
 # Install
-nixos-install --flake kaku#linudev
+nixos-install --flake kaku#ctrlone
 ```
 
 - Reboot
@@ -142,7 +142,7 @@ passwd YourUser
 - Install w/ Home-Manager the config
 
 ```bash
-home-manager switch --flake 'github:linuxmobile/kaku#linudev@aesthetic'
+home-manager switch --flake 'github:idsix/kaku#ctrlone@aesthetic'
 ```
 
 ### 🌸 <samp>DOTFILES EXPLAIN</samp>

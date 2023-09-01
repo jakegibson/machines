@@ -12,7 +12,7 @@ let
   ]);
 
   homeImports = {
-    "linuxmobile@linudev" = [ ./linudev ] ++ sharedModules;
+    "idsix@ctrlone" = [ ./ctrlone ] ++ sharedModules;
     server = [ ./server ] ++ sharedModules;
   };
 
@@ -25,8 +25,8 @@ in {
 
   flake = {
     homeConfigurations = withSystem "x86_64-linux" ({ pkgs, ... }: {
-      "linuxmobile@linudev" = homeManagerConfiguration {
-        modules = homeImports."linuxmobile@linudev";
+      "idsix@ctrlone" = homeManagerConfiguration {
+        modules = homeImports."idsix@ctrlone";
         inherit pkgs;
       };
 
